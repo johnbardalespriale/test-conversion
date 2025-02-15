@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+spring:
+  r2dbc:
+    url: r2dbc:h2:file:///C:/Users/JR/Desktop/Test/exchange-rate-system/data/exchange_db
+    username: sa
+    password: admin
