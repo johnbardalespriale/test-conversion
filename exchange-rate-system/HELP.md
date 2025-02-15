@@ -56,15 +56,12 @@ El sistema está diseñado siguiendo una arquitectura de microservicios, dividid
 
 ### 4.1 Patrones Arquitectónicos
 - Microservicios
-- API Gateway
-- Circuit Breaker
 - Reactive Programming
 
 ### 4.2 Patrones de Diseño
 - Builder Pattern (DTOs)
 - Factory Pattern (Servicios)
 - Repository Pattern
-- Strategy Pattern (Validaciones)
 
 ## 5. Seguridad
 
@@ -83,19 +80,12 @@ El sistema está diseñado siguiendo una arquitectura de microservicios, dividid
 ### 6.1 Esquema de Base de Datos
 - Tablas normalizadas
 - Relaciones definidas
-- Índices optimizados
-
-### 6.2 Transacciones
-- Transacciones reactivas
-- Consistencia de datos
-- Manejo de concurrencia
 
 ## 7. Integración y Comunicación
 
 ### 7.1 Comunicación Interna
 - WebFlux para comunicación reactiva
 - Eventos y mensajes asíncronos
-- Circuit breaker para resiliencia
 
 ### 7.2 Comunicación Externa
 - REST APIs
@@ -106,50 +96,23 @@ El sistema está diseñado siguiendo una arquitectura de microservicios, dividid
 
 ### 8.1 Configuración
 - Propiedades externalizadas
-- Perfiles de ambiente
 - Variables de entorno
-
-### 8.2 Logging y Monitoreo
-- Logging reactivo
-- Métricas de rendimiento
-- Health checks
-- Actuator endpoints
 
 ## 9. Testing
 
-### 9.1 Estrategia de Pruebas
-- Pruebas unitarias
-- Pruebas de integración
-- Pruebas de componentes
-- Pruebas end-to-end
-
-### 9.2 Herramientas
+### 9.1 Herramientas
 - JUnit 5
-- WebTestClient
 - Mockito
-- TestContainers
 
-## 10. Consideraciones de Rendimiento
+## 10. Despliegue
 
-### 10.1 Escalabilidad
-- Diseño reactivo
-- Stateless
-- Caché donde sea apropiado
-
-### 10.2 Optimización
-- Conexiones de base de datos reactivas
-- Manejo eficiente de recursos
-- Timeout configurations
-
-## 11. Despliegue
-
-### 11.1 Requerimientos
+### 10.1 Requerimientos
 - JDK 17
 - Maven 3.x
 - H2 Database
 - Configuración de ambiente
 
-### 11.2 Proceso
+### 10.2 Proceso
 - Build con Maven
 - Generación de artefactos
 - Configuración de propiedades

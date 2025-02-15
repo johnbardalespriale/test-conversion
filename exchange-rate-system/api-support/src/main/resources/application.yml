@@ -3,6 +3,6 @@ server:
 
 spring:
   r2dbc:
-    url: r2dbc:h2:file:///C:/Users/JR/Desktop/Test/exchange-rate-system/data/exchange_db
+    url: r2dbc:h2:file:///C:/Users/JR/Desktop/test-conversion/exchange-rate-system/data/exchange_db
     username: sa
     password: admin
